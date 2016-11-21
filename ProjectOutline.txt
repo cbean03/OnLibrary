@@ -1,0 +1,44 @@
+Project Title:
+OnLibrary (it’s an online library! idk if this is really a good name, it was mostly the first thing that came to mind)
+
+Purpose:
+The goal of this project is to create a social media site that facilitates the sharing of books between people.
+
+Outline: 
+Anyone shall be able to create an account using an email address. Once they create the account and login, they can begin to build their bookshelf. A user can either make their bookshelf public to everyone on the site, public to certain people or groups, or completely private. Their bookshelf will have all of the books that they currently own on it. Each book should be marked read, currently being read, or unread. Read books will have the option of including a rating (out of 5 stars) and additional reviews/comments. We need to have a search engine where users can search for books so that they can easily add them to their shelf without having to manually input all of the information. 
+Each user will also have a wishlist of books that they want to read but don’t have yet. 
+A user can create a group and invite people to join their group. The user can then decide to allow a group to be able to view their bookshelf. For example, I would create a group and add my family members and then I would go to my bookshelf and set it to be viewable by members of my family group. Each of them would also have to make their bookshelves viewable by the group as well in order for everyone else to see them. I’m thinking that when someone is invited to a group they will have the option of accepting the invite or declining the invite and then if they accept, another window will pop up asking them if they want to make their bookshelf public to this group.
+If a bookshelf is viewable to an individual or individuals, then they have the ability to click on a book and hit a button that will send a request to the owner of the book asking them to send it to them. For example if I go to my mom’s bookshelf and see that she has a book that I want to read, I can click on the book and click “Request this book” and it will send my mom a notification (via the website and email or even text if the user prefers) asking her to send me the book. My mom should be able to send me a message back saying something like “Okay I’ll send it” or “sorry I can’t send it for whatever reason”.
+
+Object Breakdown:
+User
+Each user has a secure login
+Each user has a bookshelf
+Each user can add/remove books to/from their bookshelf and mark them as read, currently reading, or unread
+Each user can rate a book and write additional comments
+Each user can make their bookshelf private or public to everyone or certain people
+Each user can create groups and invite others to join the groups
+Each user can request books from other users whose bookshelf they can see
+
+Bookshelf
+Holds all of the books that a user owns
+Can be permissioned to be viewed by certain individuals, groups, everyone on the site, or noone 
+Can be sectioned off into public and private so if there are some books that you don’t want others to be able to request they can be kept private
+We might want another bookshelf section for books that a user used to have but sent to someone else. Something like a “checked out” section.
+Book
+Will be marked as read, currently being read, or unread
+Will optionally have a rating (out of 5 stars) and extra reviews/comments
+Can be public or private
+Messaging system
+Book search engine
+Should be able to search by title, author, ISBN, category
+Results of a search should be a simple picture of the book and short description
+User should be able to click on a result and see more information about the book including more detailed description and whether anyone they know has the book.
+User should be able to click a button to add a book to their bookshelf or to their wishlist
+If a user decides to add a book to their bookshelf they will be asked whether it should be marked read, currently reading, or unread
+From the results screen a user should also be able to assign a rating to a book whether they add it to their shelf or not.
+Wishlist
+
+Tools:
+Django or Flask
+Django is more of a full stack framework
